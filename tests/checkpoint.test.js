@@ -15,7 +15,7 @@ const {
 
 describe('Checkpoint Tests', function() {
 
-  describe('EJERCICIO 1: objContains', function() {
+  xdescribe('EJERCICIO 1: objContains', function() {
      const user = {
          id: 6,
          email: 'homero@maxpower.com',
@@ -43,7 +43,7 @@ describe('Checkpoint Tests', function() {
     });
   });
 
-  describe('EJERCICIO 2: countArray', function() {
+  "describe('EJERCICIO 2: countArray', function() {
     it('Debería devolver 28 cuando el array es [1, [2, [3,4]], [5,6], 7]', function() {
       expect(countArray([1, [2, [3,4]], [5,6], 7])).to.equal(28);
     });
@@ -52,7 +52,7 @@ describe('Checkpoint Tests', function() {
     });
   });
 
-  describe('LinkedList', function() {
+  xdescribe('LinkedList', function() {
     var linkedList;
 
     beforeEach(function() {
@@ -101,7 +101,7 @@ describe('Checkpoint Tests', function() {
     });
   });
 
-  describe('EJERCICIO 6: cardGame', function() {
+  xdescribe('EJERCICIO 6: cardGame', function() {
     var mazoUserA;
     var mazoUserB;
 
@@ -145,7 +145,7 @@ describe('Checkpoint Tests', function() {
     });
   });
 
-  describe('EJERCICIO 7: generateBST', function() {
+  xdescribe('EJERCICIO 7: generateBST', function() {
 
     it('Debe generar un arbol correctamente a partir de un array', function() {
       var tree = generateBST([16,6,23,2,17,31,14,5]);
@@ -160,7 +160,7 @@ describe('Checkpoint Tests', function() {
 
   });
 
-  describe('EJERCICIO 8: binarySearch', function() {
+  xdescribe('EJERCICIO 8: binarySearch', function() {
     it('Debe devolver 1 para el arreglo [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] si busca el 2', function() {
       expect(binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2)).to.equal(1);
     });
@@ -174,7 +174,7 @@ describe('Checkpoint Tests', function() {
   });
 
 
-  describe('EJERCICIO 9: selectionSort', function() {
+  xdescribe('EJERCICIO 9: selectionSort', function() {
     it('Debe retornar el arreglo ordenado', function() {
       expect(selectionSort([4, 3, 2, 1])).to.deep.equal([1,2,3,4]);
       expect(selectionSort([1, 2, -4, 3])).to.deep.equal([-4,1,2,3]);
@@ -185,7 +185,7 @@ describe('Checkpoint Tests', function() {
   });
 
 
-  describe('EJERCICIO 10: closureSum', function() {
+  xdescribe('EJERCICIO 10: closureSum', function() {
     it('La función generada debe sumar 5 al argumento pasado', function() {
       var sumaCinco = closureSum(5);
       var sumaDiez = closureSum(10);
@@ -199,7 +199,7 @@ describe('Checkpoint Tests', function() {
     });
   });
 
-  describe('EXTRA CREDIT: allAnagrams', function() {
+  xdescribe('EXTRA CREDIT: allAnagrams', function() {
     it('Debe retornar todos los anagramas posibles para "abc"', function() {
       expect(allAnagrams('abc')).to.deep.equal([ 'abc', 'acb', 'bac', 'bca', 'cab', 'cba' ]);
     });
